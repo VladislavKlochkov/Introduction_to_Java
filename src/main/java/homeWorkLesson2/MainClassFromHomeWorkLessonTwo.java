@@ -33,7 +33,7 @@ public class MainClassFromHomeWorkLessonTwo {
     }
 
     private static void stringWriter(String string) {
-        try (PrintWriter pw = new PrintWriter("src/main/resources/files/homeWorkLesson2.txt");) {
+        try (PrintWriter pw = new PrintWriter("src/main/resources/files/homeWorkLesson2.txt")) {
             pw.print(string);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
